@@ -56,8 +56,8 @@ namespace SalesWebMvc
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
-            IApplicationBuilder applicationBuilder = app.UseMvc(routes =>
+            
+            app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
